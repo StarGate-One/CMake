@@ -1,0 +1,11 @@
+#ifndef _TUTORIAL_CONFIG_H_
+#define _TUTORIAL_CONFIG_H_
+
+/* the configured options and settings for Tutorial */
+#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
+
+/* if defined use our custom square root function */
+#cmakedefine USE_MYMATH
+
+#endif /* _TUTORIAL_CONFIG_H_ */

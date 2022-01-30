@@ -30,6 +30,7 @@ _deps
 mono_crash.*
 
 # Build results
+**/[Bb]uild_[Dd]ir/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
