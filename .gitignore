@@ -33,7 +33,7 @@ mono_crash.*
 **/[Bb]uild_[Dd]ir/
 [Dd]ebug/
 [Dd]ebugPublic/
-**/[Ii]stall_[Dd]ir/**
+**/[Ii]nstall_[Dd]ir/**
 [Rr]elease/
 [Rr]eleases/
 x64/
