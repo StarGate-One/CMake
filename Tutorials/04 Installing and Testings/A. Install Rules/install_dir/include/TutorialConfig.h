@@ -6,6 +6,6 @@
 #define Tutorial_VERSION_MINOR 0
 
 /* if defined use our custom square root function */
-/* #undef USE_MYMATH */
+#define USE_MYMATH
 
 #endif /* _TUTORIAL_CONFIG_H_ */
