@@ -47,16 +47,17 @@
 @rem pass ON, 1 or true as a parameter to .\build
 @rem to use custom mysqrt function.
 @rem Examples:
-@rem .\build release ON
-@rem .\build debug 1
-@rem .\build both true
-@rem Note: ../install_dir/lib is created only when USE_MYMATH=ON, 1 or true
+@rem .\build Release ON
+@rem .\build Debug 1
+@rem .\build All True
+@rem Note: ../install_dir/lib is created only when USE_MYMATH=ON, 1 or True
 
 @if exist .\build_dir (
    @cd .\build_dir
 
    @rem cmake .. -DUSE_MYMATH=%myUse_myMath% -DCMAKE_CONFIGURATION_TYPES=Debug;Release -DCMAKE_INSTALL_PREFIX=../install_dir
-   cmake -S ../ -B ./ -G "Visual Studio 16 2019" -A x64 -T v142 -DUSE_MYMATH=%myUse_myMath% -DCMAKE_CONFIGURATION_TYPES=Debug;Release 
+   @rem cmake -S ../ -B ./ -G "Visual Studio 16 2019" -A x64 -T v142 -DUSE_MYMATH=%myUse_myMath% -DCMAKE_CONFIGURATION_TYPES=Debug;Release
+   cmake -S ../ -B ./ -DUSE_MYMATH=%myUse_myMath%
 
    @rem Build Debug Configuration
    @if %myConfig% NEQ "Release" (
